@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Projetin</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo-alura"></a>
+        <input type="text" placeholder="Search">
+        <div class="autor">GabrielDev</div>
+    </header>
+   
+    <main class="idle">
+        <section class="nav">
+            <h2>MENU</h2>
+            <nav>
+                <a href="#">
+                    <figure class="menu-page">
+                        <img src="imagens/ide.png" alt="" class="idle-img">
+                        <figcaption class="text-body">Editor de código</figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img src="imagens/comunidade.png" alt="" class="comunity-img">
+                        <figcaption class="comunity-text">Comunidade</figcaption>
+                    </figure>
+                </a>
+            </nav>
+        </section>
+
+        <form id="form">
+            <div class="ide">
+                <div class="buttons">
+                    <div class="macRed"></div>
+                    <div class="macYellow"></div>
+                    <div class="macGreen"></div>
+                </div>
+            <div class="code-wrapper">
+                <code class="code-textarea" aria-label="editor" spellcheck="false" contenteditable="true" data-code></code>
+            </div>
+            </div>
+
+            <div class="formulario">
+                <h2>Seu Projeto</h2>
+                <input type="text" class="project-name" placeholder="Nome do Projeto" required data-title>
+                <textarea placeholder="Descrição do Projeto" style="margin-top: 16px; margin-bottom: 40px; height: 80px; min-height: 80px; width: 100%; max-width:100%; min-width: 100%; box-sizing: border-box;" class="descricao" required data-text></textarea>
+                <select value="Linguagem" name="select" class="language" data-seletor>
+                        <!-- <option value="#" disabled selected>Liguagem</option> -->
+                    <option value="js">JavaScript</option>
+                    <option value="py">Python</option>
+                    <option value="c"> C</option>
+                    <option value="java">Java</option>
+                    <option value="c-sharp">C#</option>
+                    <option value="cpp">C++</option>
+                </select>
+                <a src="#" ><button type="submit" class="button-submit" data-submit>SUBIR PROJETO</button></a>
+                <script src="script.js"></script>
+            </div>
+        </form> 
+    </main>
+</body>
+</html>

@@ -1,0 +1,252 @@
+body {
+    background-color: #051D3B;
+    font-family: 'Open Sans', sans-serif;
+    /*font-size: 20px;*/
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 32px 32px 0 32px;
+
+}
+
+.logo-alura {
+    display: flex;
+    width: 30%;
+    height: 34px;
+    min-width: 300px;
+    flex: 1;
+    box-sizing: border-box;
+    margin-left: 1px;
+    background-image: url(./imagens/logo-aluradev.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: initial;
+}
+
+header input {
+    background-color: #41536A;
+    padding: 16px 14px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: white;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.autor {
+    width: 30%;
+    min-width: 270px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 32px 0px 32px;
+    box-sizing: border-box;
+    width: 100%;    
+}
+
+.nav {
+    display: block;
+    width: 30%;
+    flex: 1;
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+.nav h2 {
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    margin: 0 0 16px 0;
+}
+
+.nav nav a {
+    display: flex;
+    margin: 16px 16px 0 0;
+    flex-direction: column;
+    text-decoration: none;
+    box-sizing: content-box;
+    cursor: pointer;
+    color: white;
+}
+
+.nav figure {
+    display: inline-flex;
+    align-items: center;
+}
+
+.idle-img {
+    background-color: #5081FB;
+    opacity: 1;
+    padding: 12px;
+    margin-right: 12px;
+    border-radius: 16px;
+}
+.comunity-img {
+    background-color: #0e2e55;
+    opacity: 50%;
+    padding: 12px;
+    margin-right: 12px;
+    border-radius: 16px;
+    transition: .4s;
+}
+
+.comunity-text {
+    transition: 0.4s;
+}
+
+.nav a figure:hover .comunity-img {
+    opacity: 1;
+
+}
+
+.comunity-text {
+    opacity: 50%;
+}
+
+.nav a figure:hover .comunity-text {
+    opacity: 1;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form .ide{
+    background-color: #EE6BFF;
+    padding: 32px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%; 
+}
+
+.buttons{
+    display: flex;
+    position: absolute;
+    box-sizing: content-box;
+    top: 32px;
+    left: 48px;
+    background-color: black;
+    width: calc(100% - 112px);
+    border-radius: 8px 8px 0px 0px;
+    padding: 16px 16px 0 16px;
+}
+
+.macRed {
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.macYellow {
+    background-color: yellow;
+    width: 12px;
+    height: 12px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+
+.macGreen {
+    background-color: rgb(144, 230, 17);
+    width: 12px;
+    height: 12px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+
+.code-textarea {
+    line-height: 18px;
+    display: block;
+    color: white;
+    padding: 52px 18px 18px 18px;
+    box-sizing: border-box;
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.65);
+    -moz-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.65);
+    white-space: pre-line;
+    resize: vertical;
+}
+
+.formulario {
+    width: 30%;
+    min-width: 270px;
+    flex: 1;
+    display: block;
+    color: white;
+    margin-left: 40px;
+}
+
+.project-name {
+    margin-top: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px 14px;
+    background-color: #41536A;;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    color: white;
+}
+
+.descricao {
+    background-color: #41536A;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: inherit;
+    padding: 16px 14px;
+    color: white;
+    border: none;
+    max-height: 80px;
+}
+
+.language {
+    width: 100%;
+    font-size: 16px;
+    background-color: #41536A;
+    padding: 16px 14px;
+    font-family: inherit;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.button-submit {
+    margin-top: 40px;
+    width: 100%;
+    padding: 16px 14px;
+    border-radius: 8px;
+    background-color: #5081FB;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button-submit:hover {
+    background-color: #88a8fa;
+}
